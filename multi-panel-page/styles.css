@@ -1,0 +1,70 @@
+body {
+    font-family: 'Archivo Narrow', 'IBM Plex Mono', 'Roboto Condensed', sans-serif;
+    margin: 0;
+}
+
+h1 {
+    font-size: 80px;
+    margin: 0;
+}
+h2{
+    font-size: 40px;
+    margin: 0;
+}
+h3 {
+    font-size: 30px;
+    margin: 0;
+}
+h4 {
+    margin: 0;
+    font-size: 18px;
+}
+
+p{
+    margin: 0;
+    font-size: 18px;
+}
+
+.intro {
+    background-image: url("images/bliss.jpeg");
+    background-size: cover;
+    height: 62vh; /* Set the intro section to 100% viewport height */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.headhead {
+    text-align: center;
+}
+
+.section3 {
+    padding-bottom: 5rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+.stevepic{
+    width: 200px;
+    height: 150px;
+}
+
+
+.grid-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2px;
+}
+
+.text-block {
+    
+}
+
+.img-block{
+    width: 200px;
+}
+
+
