@@ -109,6 +109,12 @@ section ol li::before {
     border-color: #555;
 }
 
+@media (max-width: 650px) {
+    .details-card {
+        width: 80%;
+    }
+}
+
 .details-card-recipe{
     padding: 40px;
     width: 55%;
@@ -121,12 +127,26 @@ section ol li::before {
     border-color: #555;
 }
 
+@media (max-width: 650px) {
+    .details-card-recipe {
+        width: 80%;
+    }
+}
+
 .details-card-recipe img {
     width: 48%;
     border-radius: 13px;
     position: relative;
     left: 30px;
 }
+
+@media (max-width: 650px) {
+    .details-card-recipe img {
+        width: 100%;
+    }
+}
+
+
 
 h2{
     font-size: 30px;
