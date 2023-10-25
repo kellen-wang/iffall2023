@@ -1,0 +1,138 @@
+body, h1, h2, h3, p, ul, ol, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    background-color: #fffdef;
+    margin: 0;
+}
+
+.section-intro {
+    position: relative; /* Add relative positioning to create a stacking context */
+}
+
+.section-intro img {
+    width: 100%; /* Make the image stretch the full width of its container */
+    height: auto;
+}
+
+.card {
+    position: absolute; /* Position the card absolutely within the intro section */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center the card precisely */
+    text-align: center;
+    background-color: rgba(255, 254, 230, 0.9); /* Add a semi-transparent background to the card */
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1; /* Place the card above the image */
+    width: 500px;
+    
+}
+
+.two-column-list li {
+    margin-top: 10px; /* Adjust this value to control the spacing */
+}
+
+.checkbox:checked + b{
+    text-decoration: line-through;
+    color: #999; /* Optional: Change the color to gray for a crossed-out effect */
+}
+
+.card h1 {
+    font-size: 50px;
+}
+
+.card h3 {
+    font-size: 23px;
+    font-weight: 300;
+    color: #777;
+}
+
+.card p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+section ul, section ol {
+    margin-top:8px;
+    list-style: none;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+section ol {
+    counter-reset: step;
+    list-style-position: inside; /* This places the numbers inside the list items */
+}
+
+section ol li {
+    counter-increment: step;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    padding-left: 30px; /* Add some padding to create space between the number and content */
+    position: relative; /* Use relative positioning for positioning the images */
+}
+
+@media (min-width: 600px) {
+    .details-card-recipe img {
+      width: 100%; /* Make images occupy the full width of the container */
+      border-radius: 0px;
+    }
+}
+
+section ol li::before {
+    content: counter(step);
+    font-weight: bold;
+    color: #000000;
+    margin-right: 10px;
+    font-size: 22px;
+    position: absolute; /* Use absolute positioning to place the number */
+    left: 0; /* Position the number to the left of the content */
+    top: 0; /* Align the number vertically with the content */
+}
+
+
+.details-card{
+    padding: 40px;
+    width: 55%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 1px;
+    border-color: #555;
+}
+
+.details-card-recipe{
+    padding: 40px;
+    width: 55%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 1px;
+    border-color: #555;
+}
+
+.details-card-recipe img {
+    width: 48%;
+    border-radius: 13px;
+    position: relative;
+    left: 30px;
+}
+
+h2{
+    font-size: 30px;
+}
+
+
+h3{
+    font-size: 22px;
+}
