@@ -1,0 +1,329 @@
+/* general  */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    color: white;
+    background-color: rgb(9, 9, 9); 
+    overflow: hidden;
+}
+
+h1 {
+    padding: 0px;
+}
+
+h2 {
+    padding: 0px;
+
+}
+
+
+/* curtain opener */
+
+.curtain {
+    position: fixed;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    background-color: rgb(9, 9, 9); 
+    z-index: 999; 
+    transition: transform 1s ease;
+    overflow: hidden;
+}
+
+#curtain-left {
+    left: 0;
+    border-right: 1px solid white; 
+}
+
+#curtain-right {
+    right: 0;
+    border-left: 1px solid white; 
+}
+
+#button-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+
+#open-curtain-button {
+    border: 1px solid white;
+    background-color: rgb(9, 9, 9); 
+    border-radius: 50%;
+    padding: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+#open-curtain-button:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.6); 
+}
+
+#open-curtain-button img {
+    display: block;
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+}
+
+
+/* logo properties */
+
+#header-nerv-logo{
+    border: 1px solid white;
+    background-color: rgb(9, 9, 9); 
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    position: fixed;
+    top: 50px; 
+}
+
+#header-nerv-logo:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.6); 
+}
+
+#header-nerv-logo img{
+    width: 90px;
+    border-radius: 50%;
+}
+
+
+/* organizational properties */
+
+#main-content {
+    z-index: 1; 
+    overflow: auto; 
+    display: flex;
+    padding: 50px;
+}
+
+.left-column{
+    width: 40%;
+}
+
+.right-column{
+    width: 60%;
+}
+
+.page-header{
+    display: flex;
+}
+
+/* title text  */
+
+#neon-genesis {
+    transform: scaleY(1.5); 
+    display: inline-block; 
+    margin: 0px;
+    font-size: 50px;
+}
+
+#evangelion{
+    transform: scaleY(1.5); 
+    display: inline-block;
+    margin-top: 7px;
+    margin-bottom: 0px;
+    color:rgb(88, 122, 255);
+    font-size: 55px;
+}
+
+#japanese-text{
+    margin-top: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 33px;
+    font-weight: 300;
+}
+
+#title-text{
+    padding-left: 20px;
+    position: fixed;
+    top: 50px; 
+    left: 165px;
+    z-index: 10; /* Adjust z-index if necessary */
+}
+
+
+/* left column image */
+
+#main-image-container{
+    display: flex;
+    justify-content: center; 
+    margin-top: 200px;
+    /* position: fixed; */
+}
+
+#crazy{
+    width: 85%;
+}
+
+#book{
+    width: 50%;
+}
+
+/* nav bar */
+
+.nav-bar{
+    align-self: start; 
+    width: auto;
+    position: fixed;
+    z-index: 998;
+    top: 30px;
+    background-color: rgb(9, 9, 9); 
+}
+
+.nav-bar ul {
+    list-style: none; 
+    padding: 0; 
+    display: flex; 
+    justify-content: flex-start; 
+    font-family: 'Ubuntu Mono';
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.nav-bar li {
+    margin-right: 40px; 
+}
+
+.nav-bar li:last-child {
+    margin-right: 0; 
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: white;
+    padding: 6px 8px; 
+    transition: box-shadow 0.3s ease;
+    border-radius: 15px;
+}
+
+.nav-bar a.active {
+    background-color: blue; 
+    color: white; 
+}
+
+.nav-bar a:hover {
+    box-shadow: 0 0 20px rgb(88, 122, 255);
+}
+
+
+/* right column content */
+
+.content-header{
+    margin-top: 90px;
+}
+
+.right-column-content {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.content-header h2 {
+    margin-bottom: 0;
+    text-align: left;
+    font-size: 35px;
+    font-family: 'Monofett';
+}
+
+hr{
+    margin-top: 5px;
+    padding: 0px;
+    margin-bottom: 0px;
+    height: 0.5px;
+    border: none;
+    background-color: #fff;
+}
+
+.content-text{
+    width: 100%;
+}
+.content-text p{
+    font-family: 'Ubuntu Mono';
+    font-size: 16px;
+    /* text-indent: 20px; */
+}
+
+.content-text li{
+    font-family: 'Ubuntu Mono';
+    font-size: 16px;
+    margin-bottom: 8px;
+    /* text-indent: 20px; */
+}
+
+.content {
+    overflow-y: auto; /* Allows vertical scrolling if content overflows */
+    max-height: 650px; /* Adjust the max-height as per your layout needs */
+}
+
+/* characters page */
+
+.character-container{
+    border: 0.5px solid white;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.characters-list{
+    margin-top: 10px;
+    font-family: 'Ubuntu Mono';
+}
+
+.character-container img{
+    height: 200px;
+}
+
+.character-text{
+    display: flex;
+}
+
+.character-specs{
+    width: 30%;
+    padding: 5px;
+}
+
+.character-specs p{
+    margin: 0px;
+}
+
+.character-name{
+    font-size: 20px;
+    font-weight: 800;
+    padding-bottom: 8px;
+}
+
+.character-bio{
+    width: 70%;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.character-bio p{
+    margin: 0px;
+}
+
+
+/* footer */
+
+footer{
+    font-size: 12px;
+    font-family: 'PT Mono';
+}
+
+.footer-content{
+    /* margin-left: 635px; */
+    /* margin-top: -30px; */
+}
+footer p{
+    margin: 0px;
+}
+
+
+
